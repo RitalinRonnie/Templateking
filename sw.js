@@ -1,6 +1,6 @@
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open('servicedesk-modern-cache').then(function(cache) {
+    caches.open('servicedesk-modern-full-cache').then(function(cache) {
       return cache.addAll(['.', 'index.html', 'manifest.json']);
     })
   );
